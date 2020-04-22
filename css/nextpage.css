@@ -8,20 +8,20 @@ body{
   text-align: center;
   text-decoration: none;
   display: inline;
-  color: thistle;
+  color: black;
 }
 
 .navigations a{
   margin: 15px;
   padding: 30px;
-  color: thistle;
+  color: #999999;
 }
 
 .navigations :hover{
   text-decoration: none;
   margin: 30px;
   padding: 30px;
-  color: blue;
+  color: black;
   transition: all 0.5s ease-in;
 } 
 
@@ -48,7 +48,7 @@ body{
 
 .jumbotron p{
   font-weight: bolder;
-  color: black;
+  color: white;
   font-size: 30px;
 }
 
@@ -182,4 +182,113 @@ button:hover{
 .imagetext{
   color: black;
   font-weight: 5px;
+}
+
+.delivery{
+  background-image: url("imgs/piza.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 20px;
+  height: 200px;
+  width: 100%;
+}
+
+.delivery h3{
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+
+#deliverform{
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+#deliverform input{
+  text-align: center;
+  margin: 50px;
+}
+
+.finalShow{
+  display: none;
+  text-align: center;
+  background-color: wheat;
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+}
+
+.pizzasizes{
+  border: 3px solid red;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  color: white;
+  display: none;
+}
+
+.pizzacrusts{
+  border: 3px solid red;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  color: white;
+  display: none;
+}
+
+.pizzatoppings{
+  border: 3px solid red;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  color: white;
+  display: none;
+}
+
+#addPizza{
+  font-size: 15px;
+  margin-left: 27%;
+}
+
+#orders{
+  margin-left: 40%;
+  width: 20%;
+}
+
+.footer{
+  border-radius: 10px;
+ margin: 20px;
+ padding: 10px;
+ background-color: black;
+ color: white;
+  margin: 2px;
+  padding-top: 50px;
+}
+
+.footer .col-md-6{
+	border-right: 2px solid white;
+}
+
+.col-md-6 h3{
+	color: gold;
+	text-align: center;
+}
+
+.footer p{
+	text-align: center;
+}
+
+.footer ul li{
+	margin: 20px;
+	text-decoration: none;
+	list-style-type: none;
+  float: left;
+  padding-left: 10%;
 }
