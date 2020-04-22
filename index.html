@@ -26,7 +26,7 @@
     <div class="info">
 
       <h2 class="request"> For optimal services please insert your details below: </h2>
-      
+
       <form class="input">
 
         <label for="fName">First Name: </label>
@@ -49,7 +49,24 @@
           </form>
         </div>
 
+        <div class="addressInput">
+          <label for="dAddress">Delivery Address: </label>
+          <input name="cName" id="cName" placeholder="Please insert your town name">
+          <input name="sName" id="sName" placeholder="Please insert your street name"><br>
+        </div>
+
       </form>
+
+      <button id="confirmDetailsBtn" onclick="confirmDetails()" type="submit">CONFIRM DETAILS</button>
+      <br>
+
+      <div class="show-details">
+        <h4> PERSONAL DETAILS </h4>
+        <p> We can contact you via: <span class="contactInfo"></span> </p>
+        <p> User Address <span class="orderLocation"></span></p>
+      </div>
+
+      <button id="proceedBtn"><a href="index.html">PROCEED TO ORDER</a></button>
 
     </div>
 
