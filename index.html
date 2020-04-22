@@ -23,6 +23,36 @@
       <p>This is what pizza is meant to be!</p>
     </div>
 
+    <div class="info">
+
+      <h2 class="request"> For optimal services please insert your details below: </h2>
+      
+      <form class="input">
+
+        <label for="fName">First Name: </label>
+        <input name="fName" class="fName" id="fName" placeholder="Please insert your first name"><br>
+        <label for="lName">Last Name: </label>
+        <input name="lName" id="lName" type="text" placeholder="Please insert your last name:"><br>
+        <label for="pNumber"> Phone  No: </label>
+        <input name="pNumber" id="pNumber" placeholder="Please insert your phone number:"><br>
+        <label for="eAddress"> Email Add: </label>
+        <input name="eAddress" id="eAddress" placeholder="Please insert your email address:"><br><br>
+
+        <div class="selectNai">
+          <p>Are you within Nairobi? </p>
+          <form action="/action_page.php" id="selectNai">
+            <input type="radio" name="withinNai" value="yes" id="radiobutton" onclick="displayDelivery()">
+            <label for="withinNai"> YES </label>
+            <input type="radio" name="withinNai" value="no" id="radiobutton" onclick="hideDelivery()">
+            <label for="withinNai">NO</label>
+            <div class="noDelivery"><p> Sorry. We only deliver within Nairobi </p> </div>
+          </form>
+        </div>
+
+      </form>
+
+    </div>
+
   </body>
 
 </html>
