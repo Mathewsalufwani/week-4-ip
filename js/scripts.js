@@ -11,3 +11,9 @@ function displayDelivery() {
   $(".addressInput").show(1000);
   $(".noDelivery").hide(1000);
 }
+
+function hideDelivery() {
+  $(".addressInput").hide(1000);
+  $(".noDelivery").slideToggle(1000);
+}
+
