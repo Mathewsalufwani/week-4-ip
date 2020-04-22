@@ -17,3 +17,15 @@ function hideDelivery() {
   $(".noDelivery").slideToggle(1000);
 }
 
+function confirmDetails(){
+
+  var firstName = $("#fName").val();
+  var lastName = $("#lName").val();
+  var phoneNumber = $("#pNumber").val();
+  var emailAddress = $("#eAddress").val();
+  var cityName = $("#cName").val();
+  var streetName = $("#sName").val();
+
+  console.log(phoneNumber);
+
+var Person = new  Pdetails (firstName, lastName, phoneNumber, emailAddress, cityName, streetName);
