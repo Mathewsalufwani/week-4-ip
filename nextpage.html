@@ -159,42 +159,83 @@
 
             </div>
           </div>
+
+          <div id="checkout" class="col-md-3">
+            <h4>CHECKOUT TAB:</h4>
+            <p>Below you will see the orders you have placed and the amount of money payable.</p>
+            <p>How many pizzas would you like?</p>
+  
+            <select id="orders"><p style="color: white;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+  
+            <div class="pizzasizes">
+              <h6>PIZZA SIZES</h6>
+              <ul class="sizesView">
+  
+              </ul>
+            </div>
+  
+            <div class="pizzacrusts">
+              <h6>PIZZA CRUSTS</h6>
+              <ul class="crustsView">
+  
+              </ul>
+            </div>
+  
+            <div class="pizzatoppings">
+              <h6>PIZZA TOPPINGS</h6>
+              <ul class="toppingsView">
+  
+              </ul>
+            </div>
+  
+            <button id="addPizza" onclick="addPizza()">GET TOTAL</button>
+            <p id="total">Amount payable: <span class="finalTotal"></span></p>
+  
+          </div>
+
         </div>
 
-        <div id="checkout" class="col-md-3">
-          <p>Below you will see the orders you have placed and the amount of money payable.</p>
-          <p>How many pizzas would you like?</p>
+        <div class="delivery">
+          <h3> DELIVERY OPTIONS</h3>
+          <form action="/action_page.php" id="deliverform">
+            <input type="radio" name="deliver" value="y" id="radiobutton" onclick="finalShowy()">
+            <label for="dont-deliver">Please Deliver</label>
+            <input type="radio" name="deliver" value="n" id="radiobutton" onclick="finalShown()">
+            <label for="deliver">Do Not Deliver</label>
+          </form>
+        </div>
 
-          <select id="orders"><p style="color: white;">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
+        <div class="finalShow">
+          <h4> CHECKOUT </h4>
+          <p> <span class="orderLocation"></span></p>
+          <p> <span id="totalP"></span></p>
+        </div>
 
-          <div class="pizzasizes">
-            <h6>PIZZA SIZES</h6>
-            <ul class="sizesView">
+      </div>
 
-            </ul>
-          </div>
+    </div>
 
-          <div class="pizzacrusts">
-            <h6>PIZZA CRUSTS</h6>
-            <ul class="crustsView">
+    <div class="footer">
 
-            </ul>
-          </div>
+      <div class="row">
 
-          <div class="pizzatoppings">
-            <h6>PIZZA TOPPINGS</h6>
-            <ul class="toppingsView">
+        <div class="col-md-6">
+          <h3>PAPA'S PIZZERIA</h3>
+          <p>The Pizza Website that keeps you coming back for more!</p>
+        </div>
 
-            </ul>
-          </div>
-
-          <button id="addPizza" onclick="addPizza()">GET TOTAL</button>
-          <p id="total">Amount payable: <span class="finalTotal"></span></p>
-
+        <div class="col-md-6">
+          <p>Please find time to contact me at:</p>
+          <ul>
+            <li><a href="https://www.skype.com"><img src="css/imgs/skype.png" width="30px" height="30px"></a></li>
+            <li><a href="https://www.twitter.com"><img src="css/imgs/twitter.png" width="30px" height="30px"></a></li>
+            <li><a href="https://www.youtube.com"><img src="css/imgs/youtube.png" width="30px" height="30px"></a></li>
+            <li><a href="https://www.facebook.com"><img src="css/imgs/facebook.png" width="30px" height="30px"></a></li>
+          </ul>
         </div>
 
       </div>
