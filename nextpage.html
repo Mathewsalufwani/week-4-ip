@@ -54,19 +54,19 @@
                     <div class="row">
 
                       <div class="col-md-3">
-                        <input type="image" class="pizzaSize" src="css/imgs/small.png">
+                        <input type="image" class="pizzaSize" src="css/imgs/small.jpg">
                         <p class="imagetext">Small (Ksh.400) <br> 4 Slices</p>
                         <button id="small"  value="400" onclick="sizeOrder1();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <input type="image" class="pizzaSize" src="css/imgs/medium.png">
+                        <input type="image" class="pizzaSize" src="css/imgs/medium.jpeg">
                         <p class="imagetext">Medium(Ksh.700) <br> 6 Slices</p>
                         <button id="medium" value="700" onclick="sizeOrder2();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <input type="image" class="pizzaSize" src="css/imgs/large.png">
+                        <input type="image" class="pizzaSize" src="css/imgs/large.jpeg">
                         <p class="imagetext">Large (Ksh.1000) <br> 8 Slices</p>
                         <button id="large" value="1000" onclick="sizeOrder3();">Add to cart</button>
                       </div>
@@ -83,19 +83,19 @@
                     <div class="row">
 
                       <div class="col-md-3">
-                        <img src="css/imgs/crispycrust.jpg" value="Crispy Crust, 200" onclick="crustOrder()">
+                        <img src="css/imgs/crispy.jpeg" value="Crispy Crust, 200" onclick="crustOrder()">
                         <p class="imagetext"> Crispy Crust <br> (Ksh.200) </p>
                         <button id="crispy" value="200" onclick="crustOrder1();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/stuffedcrust.jpeg">
+                        <img src="css/imgs/stuffed.jpeg">
                         <p class="imagetext"> Stuffed Crust <br> (Ksh.300) </p>
                         <button id="stuffed" value="300" onclick="crustOrder2();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/glutenfree.jpg">
+                        <img src="css/imgs/glutten.jpeg">
                         <p class="imagetext"> Glutten Free <br> (Ksh.400) </p>
                         <button id="gluttenfree" value="400" onclick="crustOrder3();">Add to cart</button>
                       </div>
@@ -112,19 +112,19 @@
                     <div class="row">
 
                       <div class="col-md-3">
-                        <img src="css/imgs/tomatoes.jpg">
+                        <img src="css/imgs/tomato.jpeg">
                         <p class="imagetext"> Tomatoes <br> (Ksh. 50) </p>
                         <button id="tomatoes" value="50" onclick="toppingsOrder1();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/cheese.jpg">
+                        <img src="css/imgs/cheese.jpeg">
                         <p class="imagetext"> Cheese <br> (Ksh. 50) </p>
                         <button id="cheese" value="50" onclick="toppingsOrder2();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/pineapples.jpg">
+                        <img src="css/imgs/pineapple.jpeg">
                         <p class="imagetext"> Pineapple <br> (Ksh. 50) </p>
                         <button id="pineapples" value="50" onclick="toppingsOrder3();">Add to cart</button>
                       </div>
@@ -134,19 +134,19 @@
                     <div class="row">
 
                       <div class="col-md-3">
-                        <img src="css/imgs/greenpepper.jpg">
+                        <img src="css/imgs/green.jpeg">
                         <p class="imagetext"> Green Pepper <br> (Ksh. 50) </p>
                         <button id="greenPepper" value="50" onclick="toppingsOrder4();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/pepperoni.jpg">
+                        <img src="css/imgs/pepe.jpeg">
                         <p class="imagetext"> Pepperoni <br> (Ksh. 50) </p>
                         <button id="pepperoni" value="50" onclick="toppingsOrder5();">Add to cart</button>
                       </div>
 
                       <div class="col-md-3">
-                        <img src="css/imgs/mushrooms.jpg">
+                        <img src="css/imgs/shrooms.jpeg">
                         <p class="imagetext"> Mushrooms <br> (Ksh. 50) </p>
                         <button id="mushrooms" value="50" onclick="toppingsOrder6();">Add to cart</button>
                       </div>
@@ -162,7 +162,39 @@
         </div>
 
         <div id="checkout" class="col-md-3">
-          
+          <p>Below you will see the orders you have placed and the amount of money payable.</p>
+          <p>How many pizzas would you like?</p>
+
+          <select id="orders"><p style="color: white;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <div class="pizzasizes">
+            <h6>PIZZA SIZES</h6>
+            <ul class="sizesView">
+
+            </ul>
+          </div>
+
+          <div class="pizzacrusts">
+            <h6>PIZZA CRUSTS</h6>
+            <ul class="crustsView">
+
+            </ul>
+          </div>
+
+          <div class="pizzatoppings">
+            <h6>PIZZA TOPPINGS</h6>
+            <ul class="toppingsView">
+
+            </ul>
+          </div>
+
+          <button id="addPizza" onclick="addPizza()">GET TOTAL</button>
+          <p id="total">Amount payable: <span class="finalTotal"></span></p>
+
         </div>
 
       </div>
