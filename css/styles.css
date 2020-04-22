@@ -29,3 +29,24 @@ input{
   margin-left: 30%; 
   width: 30%;
 }
+
+.selectNai p{
+  text-align: center;
+  margin-left: 100px;
+}
+
+.noDelivery{
+  display: none;
+}
+
+.addressInput{
+  display: none;
+}
+
+#confirmDetailsBtn{
+  background-color: black;
+  color: wheat;
+  padding: 10px;
+  width: 200px;
+}
+
