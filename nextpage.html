@@ -42,6 +42,7 @@
 
       <div class="container">
         <div class="row">
+
           <div id="order" class="col-md-9">
             <div class="buttons">
               <p style="color: black;">We appreciate you being here. Please select you pizza specifications below: </p>
@@ -104,9 +105,66 @@
                 </div>
               </div>
 
+              <div id="toppings">
+                <button id="size" onclick="toppingsShow()">TOPPINGS</button>
+                <div class="toppingsc">
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/tomatoes.jpg">
+                        <p class="imagetext"> Tomatoes <br> (Ksh. 50) </p>
+                        <button id="tomatoes" value="50" onclick="toppingsOrder1();">Add to cart</button>
+                      </div>
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/cheese.jpg">
+                        <p class="imagetext"> Cheese <br> (Ksh. 50) </p>
+                        <button id="cheese" value="50" onclick="toppingsOrder2();">Add to cart</button>
+                      </div>
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/pineapples.jpg">
+                        <p class="imagetext"> Pineapple <br> (Ksh. 50) </p>
+                        <button id="pineapples" value="50" onclick="toppingsOrder3();">Add to cart</button>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/greenpepper.jpg">
+                        <p class="imagetext"> Green Pepper <br> (Ksh. 50) </p>
+                        <button id="greenPepper" value="50" onclick="toppingsOrder4();">Add to cart</button>
+                      </div>
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/pepperoni.jpg">
+                        <p class="imagetext"> Pepperoni <br> (Ksh. 50) </p>
+                        <button id="pepperoni" value="50" onclick="toppingsOrder5();">Add to cart</button>
+                      </div>
+
+                      <div class="col-md-3">
+                        <img src="css/imgs/mushrooms.jpg">
+                        <p class="imagetext"> Mushrooms <br> (Ksh. 50) </p>
+                        <button id="mushrooms" value="50" onclick="toppingsOrder6();">Add to cart</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
+
+        <div id="checkout" class="col-md-3">
+          
+        </div>
+
       </div>
 
     </div>
