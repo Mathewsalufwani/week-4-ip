@@ -28,4 +28,21 @@ function confirmDetails(){
 
   console.log(phoneNumber);
 
-var Person = new  Pdetails (firstName, lastName, phoneNumber, emailAddress, cityName, streetName);
+  var Person = new  Pdetails (firstName, lastName, phoneNumber, emailAddress, cityName, streetName);
+
+  Pdetails.prototype.fullName = function() {
+    return Person.fname + " " + Person.lname; 
+  }
+  Pdetails.prototype.contactDetails = function() {
+    return Person.number + ", "  + Person.email;
+  }
+  Pdetails.prototype.deliveryAddress = function() {
+    return Person.cname + ", " + Person.sname;
+  }
+
+  $(".show-details").show(1000);
+  $(".fullName").text(Person.fullName);
+  $(".contactInfo").text(Person.contactDetails);
+  $(".orderLocation").text(Person.deliveryAddress);
+  
+};
